@@ -21,7 +21,8 @@ class Pokemon
     SELECT FROM pokemon WHERE id = ? 
     SQL
     
-    pokemon = db.execute(sql,id)[0][0]
+    result = db.execute(sql,id)
+    Pokemon.new()
   end 
 
 
