@@ -25,8 +25,6 @@ class Pokemon
     
     found_poke = db.execute(sql,id).flatten 
     Pokemon.new(id: found_poke[0], name: found_poke[1], type: found_poke[2], db: db )
-  # binding.pry 
-    
   end 
 
 
