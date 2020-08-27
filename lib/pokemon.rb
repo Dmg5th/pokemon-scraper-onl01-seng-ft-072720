@@ -22,7 +22,7 @@ class Pokemon
     SQL
     
     result = db.execute(sql,id).flatten 
-    
+    Pokemon.new()
     binding.pry 
     
   end 
