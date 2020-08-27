@@ -21,7 +21,8 @@ class Pokemon
     SELECT * FROM pokemon WHERE id = ?;
     SQL
     
-    result = db.execute(sql,id)
+    result = db.execute(sql,id).flatten 
+    
     binding.pry 
     
   end 
