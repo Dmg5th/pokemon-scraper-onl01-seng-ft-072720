@@ -23,8 +23,8 @@ class Pokemon
     SELECT * FROM pokemon WHERE id = ?;
     SQL
     
-    result = db.execute(sql,id).flatten 
-    found_poke = Pokemon.new(found_poke[0], found_poke[1], found_poke[2], db )
+    found_poke = db.execute(sql,id).flatten 
+    Pokemon.new(found_poke[0], found_poke[1], found_poke[2], db )
    binding.pry 
     
   end 
