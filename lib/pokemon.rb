@@ -12,14 +12,16 @@ class Pokemon
     sql = <<-SQL 
     INSERT INTO Pokemon (name, type) VALUES (?,?)
     SQL
+    
     db.execute(sql,name,type)
   end 
   
   def self.find(id, db)
     sql = <<-SQL
-    
+    SELECT FROM pokemon WHERE id = ? 
     SQL
-  
+    
+    db.execute(sql,id)[0][0]
   end 
 
 
