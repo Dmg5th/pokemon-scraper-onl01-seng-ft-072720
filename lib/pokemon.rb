@@ -9,5 +9,8 @@ class Pokemon
   end
 
   def self.save
+    sql = <<-SQL 
+    SQL
+  end 
 
 end
